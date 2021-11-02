@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+           <centre>
+       <h1>  <centre>Welcome to the Game...!!!! </centre> </h1> <br>
+
+
+</centre>
+        <p> Click on the button to start </p>
+
+        <br>
+       <div id= "root"></div>
+     
+       <br>
+
+       <button onclick="play()"> clickme</button>
+
+       </centre>
+
+        <script>
+           
+
+           function play()
+{
+    var random=Math.floor((Math.random()*4)+1)
+    switch(random){
+        case 1:
+            document.getElementById('root').innerHTML="monday"
+            break;
+        case 2:
+            document.getElementById('root').innerHTML="tuesday"
+            break;
+        case 3:
+            document.getElementById('root').innerHTML="wednesday"
+            break;
+        case 4:
+            document.getElementById('root').innerHTML="thursday"
+            break;
+
+
+
+    }
+}
+
+
+
+
+
+
+        </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
