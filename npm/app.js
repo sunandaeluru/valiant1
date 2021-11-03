@@ -1,26 +1,26 @@
 var nodemailer=require('nodemailer')
 
-var transportter= nodemailer.createTransport({
+
+var tronsportter=nodemailer.createTransport({
     service:'gmail',
     auth:{
-
-        username:'sunanda.e97@gmail.com',
-        pass:'s9849677260'
+        user:'sunanda.eluru1997@gmail.com',
+        pass:'9347476520'
     }
 })
 
 
 var mailoptions={
-    from:'sunanda.e97@gmail.com',
+    from:'sunanda.eluru1997@gmail.com',
     to:'sunanda.eluru97@gmail.com',
-    subject:'test',
-    text:'email confirmation'
+    subject:'testing our email program',
+    text:'test'
 }
 
-transportter.sendMail(mailoptions,(err,res)=>{
+tronsportter.sendMail(mailoptions,(err,res)=>{
     if(err){
         console.log(err)
     }else{
-        console.log('mail sent')
+        console.log('mail send')
     }
 })
